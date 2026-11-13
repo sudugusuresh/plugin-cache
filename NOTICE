@@ -1,0 +1,10 @@
+plugin-cache
+Copyright 2024-2026 Sudugu Suresh
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This product depends on the following third-party libraries, which are distributed
+under their own licenses and are not bundled in the plugin-cache jar:
+
+  - Jedis (https://github.com/redis/jedis) - MIT License
+  - Apache Log4j 2 (https://logging.apache.org/log4j/2.x/) - Apache License 2.0

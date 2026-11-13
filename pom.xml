@@ -1,0 +1,76 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.plugin</groupId>
+	<artifactId>plugin-cache</artifactId>
+	<version>1.0.0</version>
+	<packaging>jar</packaging>
+	<name>plugin-cache</name>
+	<description>Lightweight pooled Redis client (Jedis) with retry support and shared utility helpers for Java 8+.</description>
+	<url>https://github.com/sudugusuresh/plugin-cache</url>
+	<inceptionYear>2024</inceptionYear>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>sudugusuresh</id>
+			<name>Sudugu Suresh</name>
+			<email>skact.tech@gmail.com</email>
+			<url>https://github.com/sudugusuresh</url>
+		</developer>
+	</developers>
+
+	<scm>
+		<url>https://github.com/sudugusuresh/plugin-cache</url>
+		<connection>scm:git:https://github.com/sudugusuresh/plugin-cache.git</connection>
+		<developerConnection>scm:git:git@github.com:sudugusuresh/plugin-cache.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/sudugusuresh/plugin-cache/issues</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>GitHub Actions</system>
+		<url>https://github.com/sudugusuresh/plugin-cache/actions</url>
+	</ciManagement>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<log4j.version>2.17.2</log4j.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>4.2.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>plugin-cache</finalName>
+	</build>
+</project>
